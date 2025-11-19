@@ -31,7 +31,7 @@ let stringNumber = String(someNumber)
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue);   -3
 
 // console.log(2+2);
 // console.log(2-2);
@@ -44,25 +44,25 @@ let str1 = "hello"
 let str2 = " hitesh"
 
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3);   hello hitesh
 
-// console.log("1" + 2);
+// console.log("1" + 2);    
 // console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2 + 2);    122 not  14 
+// console.log(1 + 2 + "2");    32 not 122 as it check first variable is string or number here there was number that's why it added first then concatinate.
 
-// console.log( (3 + 4) * 5 % 3);
+// console.log( (3 + 4) * 5 % 3); 
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true);  1 and reverse tru+ is error
+// console.log(+"");    0
 
 let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2
+num1 = num2 = num3 = 2 + 2  //not right way to write
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+console.log(gameCounter);     //  101
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
