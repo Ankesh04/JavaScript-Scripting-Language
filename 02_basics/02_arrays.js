@@ -1,7 +1,7 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros)     here nested arrays are formed 
+// marvel_heros.push(dc_heros) c    here nested arrays are formed 
 //for marvel_heros d_heros is a single element
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
