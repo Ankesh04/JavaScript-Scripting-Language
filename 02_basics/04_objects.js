@@ -61,19 +61,24 @@ const course = {
     courseInstructor: "hitesh"
 }
 
-// course.courseInstructor
+// course.courseInstructor   this is the simple process but if we have to print it again and again so we shorten it we so do object deconstructoring
 
 const {courseInstructor: instructor} = course
 
-// console.log(courseInstructor);
-console.log(instructor);
+// console.log(courseInstructor);   //hitesh
+console.log(instructor);      //hitesh
 
+
+//API
+//json not object as object's name is added but this is json 
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
 
+
+//array format in api
 [
     {},
     {},
