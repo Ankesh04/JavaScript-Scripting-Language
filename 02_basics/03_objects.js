@@ -19,7 +19,7 @@ const JsUser = {
 
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
-//console.log(JsUser.full name)     in many case we not use . as it cannot acces this tpe of variables
+//console.log(JsUser.full name)     in many case we not use . as it cannot acces this type of variables
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 //console.log(typeof JsUser.mySym)
@@ -36,5 +36,5 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);     //this is used when you have to use same object
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());     //hello js user
+console.log(JsUser.greetingTwo());  //hello js user, hitesh
