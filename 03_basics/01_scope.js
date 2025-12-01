@@ -46,13 +46,13 @@ if (true) {
 
 console.log(addone(5))
 
-function addone(num){
+function addone(num){                   //here we have simple declared a function so it can be accesed if we call before the declaration
     return num + 1
 }
 
 
 
 addTwo(5)
-const addTwo = function(num){
+const addTwo = function(num){           //but here we have declared a function and also hold it so here error comes
     return num + 2
 }
