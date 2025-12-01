@@ -18,5 +18,38 @@ There are different excecution context:
 -FUNCTION/FUNCTIONAL EXECUTION CONTEXT
 -EVAL EXECUTION CONTEXT
 
+Two phases are:
+{} -> Memory Creation Phase
+        only the memory is assigned to the variables , they are not executed
+   -> Execution Phase
+        all the functioning part like plus minus loops are executed here
 
+Example:-
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result = addNum(val1, val2)
+let result2 = addNum(10,2)
+
+Now we will see step by step how this is executed
+
+1) Global execution (Global Environment)
+whatever code we have to run either it is big or small that is run by global execution and it is alocated in "this".
+
+2) Memory phase
+all the variables are collected and kept and marked as undefined
+val1-->undefined
+val2-->undefined
+addNum-->defination     function ki defination mtlb uske andar ka sara maal chala gaya iske andar
+result1-->undefined
+result2-->undefied
+this is called FIRST CYCLE
+
+3)Execution Phase
+val1<--10
+val2<--5
+addNUm me kuch hoga nahi kyuki usko pehle hi define kar chuke hai
 */
