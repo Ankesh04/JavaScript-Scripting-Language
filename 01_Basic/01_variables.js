@@ -1,3 +1,6 @@
+//SHIFT + ALT + Down arrow 
+//to copy the selected in next line
+
 const accountId = 144553
 let accountEmail = "hitesh@google.com"
 var accountPassword = "12345"
