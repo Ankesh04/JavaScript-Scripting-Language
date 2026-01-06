@@ -43,3 +43,35 @@ gives html code written in the content
 real world use
 Document.querySelector(h2)
 uska full line html code dedeta heading
+
+
+Example*******************
+Vist vikipedia page for javascript(any page)
+right click on any heading and click in inspect and select console
+here the heading is h2 tag so to extract information we use
+>document.querySelectorAll('h2')
+then NodeList(13) [h2,vector-pinnable-header-label,h2,h2,h2,h2] will apear
+now we will add all the nodelist values in a variable
+const allH2 = document.querySelectorAll('h2')
+now if we have to know element on each index we will written
+>allH2[0].innerHTML
+<-'Contents'
+>allH2[1].innerHTML
+<-'Trademark'
+
+now if we have to know where the particular classname is been used then
+>document.querySelectorAll('.mw-headline')
+NodeList[40] 
+>const myH2 = document.querySelectorAll('.mw-headline')
+
+now if we want to manipulate the page or make changesn then
+myH2.forEach(function(h){
+    h.style.color = 'red';
+    h.style.backgroundcolor = 'green';
+    h.style.padding = '10px';
+    h.innerHTML = 'Ankesh' 
+})
+
+the style changes and name of all the heading containing the class hmw-headline will changed to Ankesh
+
+
