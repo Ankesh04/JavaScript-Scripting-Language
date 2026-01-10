@@ -1,8 +1,8 @@
 //this is my first code
 /** 
 * *This is a importent comment
-* ! This is warning comment
-* ? This is a question comment
+* ! This is warning comment.
+* ? This is a question comment.
 * TODO: This is a todo comment
 */
 function buttonclicked(){

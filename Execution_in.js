@@ -1,7 +1,7 @@
 /*
 *********HOW CODE IS EXECUTED IN JAVASCRIPT**********
 
-JAVASCRIPT EXECUTION CONTEXT
+JAVASCRIPT EXECUTION CONTEXT.
 Whatever js file yo have made how it will be executed
 what js does is that it runs in two phase
 
