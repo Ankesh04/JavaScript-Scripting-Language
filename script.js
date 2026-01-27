@@ -19,7 +19,67 @@ document.writeln("substraction of 2 numbers: " +(num1-num2) +"<br>")
 document.writeln("multiplication of 2 numbers: " +num1*num2 +"<br>")
 document.writeln("division of 2 numbers: " +num1/num2 +"<br>")
 
+
+
+//arrays
+let myarray = ["abhi", "amy", "bro", "shri"];
+console.log(myarray)
+console.log(myarray[1])
+console.log(myarray[2])
+document.writeln(myarray)
+
+
+//objects
+let myobj = {
+    name : "ankesh",
+    age : 22,
+    education : "B Tech"
+}
+
+document.writeln(myobj.name)
+document.writeln(myobj.age)
+
+document.writeln("<br>")
+
+//function
+function dish() {
+    console.log("1. Put on heat")
+    console.log("2. add panner")
+    console.log("3. add masala")
+    console.log("4. serve it")
+}
+dish()
+
+function dynamic_dish(ingredients) {
+    console.log("1. Put on heat")
+    console.log("2. add " + ingredients)
+    console.log("3. add masala")
+    console.log("4. serve it")
+}
+dynamic_dish("aloo")
+
+
+let student = {
+    maths: 100,
+    english: 80,
+    physics:90
+}
+
+let student2 = {
+    maths: 80,
+    english: 90,
+    physics:95
+}
+
+function calculateTotal(obj){
+    console.log(obj.maths + obj.english + obj.physics)
+}
+
+calculateTotal(student)
+calculateTotal(student2)
+
 /*
+
 
 
 */
