@@ -78,6 +78,28 @@ function calculateTotal(obj){
 calculateTotal(student)
 calculateTotal(student2)
 
+
+
+
+// apis
+// we use async so that if we want to dowload then it donot stop the process and run in backgrond
+async function getuser(){
+    //await is used because the download will take time
+    let responce = await fetch("https://jsonplaceholder.typicode.com/users")
+    //format the responce(as the data is in unreadable form)
+    //as conversion needs time
+    let converted = await responce.json()
+    console.log(converted)
+    console.log(converted[0])
+    document.writeln(converted)//!!!!!!!
+    document.writeln(converted[0].name)
+    document.writeln(converted[0].company.name)
+}
+
+getuser()
+
+
+
 /*
 
 
