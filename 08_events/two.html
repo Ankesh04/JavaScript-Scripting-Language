@@ -6,19 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur code</h1>
+    <h1>Ankesh Agarwal</h1>
     <button id="stop">Stop</button>
 </body>
 <script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
+    const sayAnkesh = function(){
+        console.log("Ankesh");
     }
     const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
+        document.querySelector('h1').innerHTML = "JavaScript Async"
     }
 
     const changeMe = setTimeout(changeText, 2000)
-
+    //this settimeout move out side of the code and goes to event queue
+    //this set timeout wait for two second and then the text is changed
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("STOPPED")

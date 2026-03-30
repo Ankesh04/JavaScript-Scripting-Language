@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur Javascript</h1>
+    <h1>Ankesh Agarwal</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
@@ -15,8 +15,18 @@
         console.log(str, Date.now());
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    
+    document.querySelector('#start').addEventListener('click', function(){
+        console.log("Started")
+        const intervalId = setInterval(sayDate, 1000, "hi")
+        
+        document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        console.log("STOPPED")
+        })
+    })
 
-    clearInterval(intervalId)
+    
+    
 </script>
 </html>
