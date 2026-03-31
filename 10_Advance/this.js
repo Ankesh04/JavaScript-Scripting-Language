@@ -4,7 +4,7 @@ window object is the default function in the javascript browser
 */
 
 const student ={
-    name : "aneksh",
+    name : "ankesh",
     age:23,
     eng:90,
     math:98,
