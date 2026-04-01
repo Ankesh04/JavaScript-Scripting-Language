@@ -101,6 +101,8 @@ savetoDb("ankesh agarwal")
 
 // PROMISE CHANNING
 // it means using then() in regular 
+// this is a improved version
+
 
 savetoDb("ankesh agarwal")
     .then(()=>{
@@ -118,3 +120,42 @@ savetoDb("ankesh agarwal")
         console.log("promise was rejected");
     })
 //same like the try and catch there are multiple try and only one catch here also same thing happens
+// but in here we are using same nested option so this is not promise channing
+
+savetoDb("ankesh agarwal")
+    .then(()=>{
+        console.log("data 1. promise was resolved")
+        return savetoDb("ankesh agarwal");
+    })
+    .then(()=>{
+        console.log("data 2. promise was resolved")
+        return savetoDb("agarwal");
+    })
+    .then(()=>{
+        console.log("data 3. promise was resolved")
+    })
+    .catch(()=>{
+        console.log("promise was rejected");
+    })
+
+    // THIS IS PROMISE CHANNING
+
+    // Promises are rejected and resolved with some data (valid result or errors)
+
+    savetoDb("ankesh agarwal")
+    .then((data)=>{
+        console.log("data 1. promise was resolved", data)
+        return savetoDb("ankesh agarwal");
+    })
+    .then((data)=>{
+        console.log("data 2. promise was resolved", data)
+        return savetoDb("agarwal");
+    })
+    .then((data)=>{
+        console.log("data 3. promise was resolved", data)
+    })
+    .catch((error)=>{
+        console.log("promise was rejected", error);
+    })
+    //here the value of data = data was saved
+    // here the value of error = weak connection
