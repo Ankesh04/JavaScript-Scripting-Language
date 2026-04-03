@@ -22,3 +22,4 @@ let {math:mathScore, phys:physicsScore} = student;
 // 98,91
 let {math:math1Score, phys:physics1Score, city = "jharkhand"} = student;
 //default value
+// example
