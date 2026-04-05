@@ -14,3 +14,17 @@ async function getFacts() {
     console.log(res);
     console.log(data.fact);
 }
+
+// error mai come so we will use try and catch
+
+async function getFacts() {
+    try{
+        let res = await fetch(url);//here it will wait until the response will come from the api
+        let data = await res.json();
+        console.log(res);
+        console.log(data.fact);
+    }
+    catch(e) {
+        console.log(e)
+    }
+}
