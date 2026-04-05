@@ -1,0 +1,34 @@
+// UPDATING QUERY STRING
+let url = "http://universities.hipolabs.com/search?name=";
+
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", async () =>{
+    let country = document.querySelector("input").value;
+    console.log(country);    
+    let collArr = await getColleges(country);
+    show(collArr);
+
+})
+
+
+function show(collArr) {
+    let result = document.querySelector("#list")
+    result.innerText = "";
+    for(col of collArr){
+        let li = document.createElement("li");
+        li.innerText = col.name;
+        result.appendChild(li);
+    }
+}
+
+async function getColleges(country) {
+    try{
+        let res = await axios.get(url+country);
+        return res.data;
+    }
+    catch(e) {
+        console.log(e);
+        return [];
+    }
+}
