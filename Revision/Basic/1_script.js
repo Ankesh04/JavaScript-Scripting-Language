@@ -64,11 +64,58 @@
 // console.log("The power product =", power);
 
 // Comparision operator
-console.log(10 <= 10);
-console.log(10 == 10);
-console.log(10 == "10");
-console.log(10 == "100");
-console.log("qwd", 10 !== "10"); //check the data type which is not true
-console.log("qdwd", 10 !== "100"); //check the data type which is not true
-console.log(10 === 10);
-console.log(10 === "10");
+// console.log(10 <= 10);
+// console.log(10 == 10);
+// console.log(10 == "10");
+// console.log(10 == "100");
+// console.log("qwd", 10 !== "10"); //check the data type which is not true
+// console.log("qdwd", 10 !== "100"); //check the data type which is not true
+// console.log(10 === 10);
+// console.log(10 === "10");
+
+//comparision operator
+let a = 25;
+let b = 20000;
+console.log(a > 18 && b > 25000);
+console.log((a > 18 && b < 25000) || age === 30);
+
+let username = "admin";
+let pswd = "123";
+console.log(username == "admin" || pswd !== "123");
+
+// assignment operator
+
+console.log((a = a + 20));
+console.log((a += 30));
+console.log(a);
+console.log((a -= 30));
+console.log((a /= 5));
+console.log((a *= 9));
+console.log((a %= 17));
+console.log(typeof username);
+
+//ternairy operator
+// conditiom?truestatement:falsestatement
+a > 0 ? console.log("Positive") : console.log("Negative");
+
+//Conditional statements
+let age = Number(prompt("Enter your age:"));
+if (age > 25) {
+  console.log("Eligible for marraige");
+} else {
+  console.log("Not eligible for marraige");
+}
+//*********** */
+let vote_age = Number(prompt("Enter your age:"));
+if (vote_age >= 18) {
+  console.log("Eligible for Vote.");
+} else {
+  console.log("Not eligible for Vote.");
+}
+//******** */
+let num1 = Number(prompt("Enter the number:"));
+if (num1 % 2 == 0) {
+  console.log("The number is even.");
+} else {
+  console.log("The number is odd.");
+}
