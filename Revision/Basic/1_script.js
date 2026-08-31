@@ -74,48 +74,126 @@
 // console.log(10 === "10");
 
 //comparision operator
-let a = 25;
-let b = 20000;
-console.log(a > 18 && b > 25000);
-console.log((a > 18 && b < 25000) || age === 30);
+// let a = 25;
+// let b = 20000;
+// console.log(a > 18 && b > 25000);
+// console.log((a > 18 && b < 25000) || age === 30);
 
-let username = "admin";
-let pswd = "123";
-console.log(username == "admin" || pswd !== "123");
+// let username = "admin";
+// let pswd = "123";
+// console.log(username == "admin" || pswd !== "123");
 
-// assignment operator
+// // assignment operator
 
-console.log((a = a + 20));
-console.log((a += 30));
-console.log(a);
-console.log((a -= 30));
-console.log((a /= 5));
-console.log((a *= 9));
-console.log((a %= 17));
-console.log(typeof username);
+// console.log((a = a + 20));
+// console.log((a += 30));
+// console.log(a);
+// console.log((a -= 30));
+// console.log((a /= 5));
+// console.log((a *= 9));
+// console.log((a %= 17));
+// console.log(typeof username);
 
-//ternairy operator
-// conditiom?truestatement:falsestatement
-a > 0 ? console.log("Positive") : console.log("Negative");
+// //ternairy operator
+// // conditiom?truestatement:falsestatement
+// a > 0 ? console.log("Positive") : console.log("Negative");
 
-//Conditional statements
-let age = Number(prompt("Enter your age:"));
-if (age > 25) {
-  console.log("Eligible for marraige");
+// //Conditional statements
+// let age = Number(prompt("Enter your age:"));
+// if (age > 25) {
+//   console.log("Eligible for marraige");
+// } else {
+//   console.log("Not eligible for marraige");
+// }
+// //*********** */
+// let vote_age = Number(prompt("Enter your age:"));
+// if (vote_age >= 18) {
+//   console.log("Eligible for Vote.");
+// } else {
+//   console.log("Not eligible for Vote.");
+// }
+// //******** */
+// let num1 = Number(prompt("Enter the number:"));
+// if (num1 % 2 == 0) {
+//   console.log("The number is even.");
+// } else {
+//   console.log("The number is odd.");
+// }
+// let username = prompt("Enter your username:");
+// let paswd = prompt("Enter the password:");
+// if (username == "ankesh" && paswd == "dazzido") {
+//   console.log("Login succesful");
+// } else {
+//   console.log("Wrong Username or Password:Login failed");
+// }
+
+// if (username == "ankesh") {
+//   if (paswd == "dazzido") {
+//     console.log("Login succesful");
+//   } else {
+//     console.log("Wrong Password:Login failed");
+//   }
+// }else {
+//     console.log("Wrong Username:Login failed");
+//   }
+
+// let num1 = prompt("Enter the number:");
+// if (num1 % 3 == 0 && num1 % 5 == 0) {
+//   console.log("The number is divisible by 3 & 5");
+// } else {
+//   console.log("The number is not divisible by 3 & 5");
+// }
+
+// let username = prompt("Enter your username:");
+// let sum = Number(prompt("Enter the total of your product"));
+
+// if (username == "ankesh" || username == "dazzido") {
+//   if (sum > 5999) {
+//     sum = sum + (sum * 15) / 100;
+//     console.log("You are a member, Your final price :", sum);
+//   } else {
+//     console.log("Your total price is less than 6000, Your final price :", sum);
+//   }
+// } else {
+//   console.log("You are not a member, Your final price :", sum);
+// }
+
+// let salary = Number(prompt("Enter your salary:"));
+// if (salary > 30000) {
+//   let c_score = Number(prompt("Enter your civil score"));
+//   if (c_score > 700) {
+//     console.log("You are eligibal");
+//   } else {
+//     console.log("you are not eligibal");
+//   }
+// } else {
+//   console.log("Salary is low for eligibelity");
+// }
+
+let char1 = prompt("Enter a letter to check the vowel");
+if (
+  char1 == "a" ||
+  char1 == "e" ||
+  char1 == "i" ||
+  char1 == "o" ||
+  char1 == "u" ||
+  char1 == "A" ||
+  char1 == "E" ||
+  char1 == "I" ||
+  char1 == "O" ||
+  char1 == "U"
+) {
+  console.log("The letter is vowel.");
 } else {
-  console.log("Not eligible for marraige");
+  console.log("The letter is not vowel");
 }
-//*********** */
-let vote_age = Number(prompt("Enter your age:"));
-if (vote_age >= 18) {
-  console.log("Eligible for Vote.");
-} else {
-  console.log("Not eligible for Vote.");
-}
-//******** */
-let num1 = Number(prompt("Enter the number:"));
-if (num1 % 2 == 0) {
-  console.log("The number is even.");
-} else {
-  console.log("The number is odd.");
+
+let paid = true;
+let attendance = 89;
+if (true) {
+  if (attendance >= 75) {
+    console.log("Student is eligible");
+  } else {
+    console.log("Low attendance: Not eleigble");
+  }
 }
