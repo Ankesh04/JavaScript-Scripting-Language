@@ -170,30 +170,143 @@
 //   console.log("Salary is low for eligibelity");
 // }
 
-let char1 = prompt("Enter a letter to check the vowel");
-if (
-  char1 == "a" ||
-  char1 == "e" ||
-  char1 == "i" ||
-  char1 == "o" ||
-  char1 == "u" ||
-  char1 == "A" ||
-  char1 == "E" ||
-  char1 == "I" ||
-  char1 == "O" ||
-  char1 == "U"
-) {
-  console.log("The letter is vowel.");
-} else {
-  console.log("The letter is not vowel");
-}
+// let char1 = prompt("Enter a letter to check the vowel");
+// if (
+//   char1 == "a" ||
+//   char1 == "e" ||
+//   char1 == "i" ||
+//   char1 == "o" ||
+//   char1 == "u" ||
+//   char1 == "A" ||
+//   char1 == "E" ||
+//   char1 == "I" ||
+//   char1 == "O" ||
+//   char1 == "U"
+// ) {
+//   console.log("The letter is vowel.");
+// } else {
+//   console.log("The letter is not vowel");
+// }
 
-let paid = true;
-let attendance = 89;
-if (true) {
-  if (attendance >= 75) {
-    console.log("Student is eligible");
-  } else {
-    console.log("Low attendance: Not eleigble");
-  }
+// let paid = true;
+// let attendance = 89;
+// if (true) {
+//   if (attendance >= 75) {
+//     console.log("Student is eligible");
+//   } else {
+//     console.log("Low attendance: Not eleigble");
+//   }
+// }
+
+//else if
+
+// let mark = Number(prompt("Enter the number"));
+// if (mark > 100 || mark < 0) {
+//   console.log("Invalid marks");
+// } else if (mark >= 90) {
+//   console.log("Grade A");
+// } else if (mark >= 80) {
+//   console.log("Grade B");
+// } else if (mark >= 70) {
+//   console.log("Grade C");
+// } else {
+//   console.log("Failed");
+// }
+
+// let temp = Number(prompt("Enter the Temperature"));
+// if (temp > 50) {
+//   console.log("Boiling Hot");
+// } else if (temp >= 35) {
+//   console.log("Too Hot");
+// } else if (temp >= 25 && temp <= 34) {
+//   console.log("Warm");
+// } else {
+//   console.log("Cold");
+// }
+
+// let salary = Number(prompt("Enter the salary"));
+// if (salary >= 50000) {
+//   bonus = salary + (salary * 5) / 100;
+//   console.log("Your final salary is ", bonus);
+// } else if (salary >= 40000) {
+//   bonus = salary + (salary * 4) / 100;
+//   console.log("Your final salary is ", bonus);
+// } else if (salary >= 30000) {
+//   bonus = salary + (salary * 3) / 100;
+//   console.log("Your final salary is ", bonus);
+// } else {
+//   console.log("No bonus");
+// }
+
+// let num1 = Number(prompt("Enter the first Number"));
+// let num2 = Number(prompt("Enter the second Number"));
+// let operator1 = prompt("Enter the Opeartor(+,-,*,/,%,**:");
+// if (operator1 == "+") {
+//   console.log(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
+// } else if (operator1 == "-") {
+//   console.log(`The substraction of ${num1} and ${num2} is ${num1 - num2}`);
+// } else if (operator1 == "*") {
+//   console.log(`The product of ${num1} and ${num2} is ${num1 * num2}`);
+// } else if (operator1 == "/") {
+//   console.log(`The division of ${num1} and ${num2} is ${num1 / num2}`);
+// } else if (operator1 == "%") {
+//   console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2}`);
+// } else if (operator1 == "**") {
+//   console.log(`The  product of ${num1} power ${num2} is ${num1 ** num2}`);
+// } else {
+//   console.log("Enter valid operator!");
+// }
+
+//SWITCH
+// let day = Number(prompt("Enter the 1 to 7 to find the day"));
+// switch (day) {
+//   case 1:
+//     console.log("Sunday");
+//     break;
+//   case 2:
+//     console.log("Monday");
+//     break;
+//   case 3:
+//     console.log("Tuesday");
+//     break;
+//   case 4:
+//     console.log("Wednessday");
+//     break;
+//   case 5:
+//     console.log("Thursday");
+//     break;
+//   case 6:
+//     console.log("Friday");
+//     break;
+//   case 7:
+//     console.log("Saturday");
+//     break;
+//   default:
+//     console.log("Error:Enter between 1 to 7");
+// }
+
+let num1 = Number(prompt("Enter the first Number"));
+let num2 = Number(prompt("Enter the second Number"));
+let operator = prompt("Enter the Opeartor(+,-,*,/,%,**:");
+switch (operator) {
+  case "+":
+    console.log(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
+    break;
+  case "-":
+    console.log(`The substraction of ${num1} and ${num2} is ${num1 - num2}`);
+    break;
+  case "*":
+    console.log(`The product of ${num1} and ${num2} is ${num1 * num2}`);
+    break;
+  case "/":
+    console.log(`The division of ${num1} and ${num2} is ${num1 / num2}`);
+    break;
+  case "%":
+    console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2}`);
+    break;
+  case "**":
+    console.log(`The  product of ${num1} power ${num2} is ${num1 ** num2}`);
+    break;
+  default:
+    console.log("Enter valid operator!");
 }
