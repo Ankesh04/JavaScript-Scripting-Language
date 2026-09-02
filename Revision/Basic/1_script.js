@@ -285,28 +285,135 @@
 //     console.log("Error:Enter between 1 to 7");
 // }
 
-let num1 = Number(prompt("Enter the first Number"));
-let num2 = Number(prompt("Enter the second Number"));
-let operator = prompt("Enter the Opeartor(+,-,*,/,%,**:");
-switch (operator) {
-  case "+":
-    console.log(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
+// let num1 = Number(prompt("Enter the first Number"));
+// let num2 = Number(prompt("Enter the second Number"));
+// let operator = prompt("Enter the Opeartor(+,-,*,/,%,**:");
+// switch (operator) {
+//   case "+":
+//     console.log(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
+//     break;
+//   case "-":
+//     console.log(`The substraction of ${num1} and ${num2} is ${num1 - num2}`);
+//     break;
+//   case "*":
+//     console.log(`The product of ${num1} and ${num2} is ${num1 * num2}`);
+//     break;
+//   case "/":
+//     console.log(`The division of ${num1} and ${num2} is ${num1 / num2}`);
+//     break;
+//   case "%":
+//     console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2}`);
+//     break;
+//   case "**":
+//     console.log(`The  product of ${num1} power ${num2} is ${num1 ** num2}`);
+//     break;
+//   default:
+//     console.log("Enter valid operator!");
+// }
+
+// let order = Number(
+//   prompt(
+//     // "Enter the order for the course of food:\n1 for Starter, 2 for Main course, 3 for Desert", or we can write for next line
+//     `Enter the selection for the course of food:
+//     1 for Starter,
+//     2 for Main course,
+//     3 for Desert`,
+//   ),
+// );
+// switch (order) {
+//   case 1:
+//     console.log("For Starter we have: 1.Noodles, 2.Momos, 3.Baby corn chilli");
+//     let starter = Number(prompt("Enter the order selection(1,2,3):"));
+//     switch (starter) {
+//       case 1:
+//         console.log(`Your order, NOODLES is on the way`);
+//         break;
+//       case 2:
+//         console.log(`Your order, MOMOS is on the way`);
+//         break;
+//       case 3:
+//         console.log(`Your order, BABY CORN CHILLI is on the way`);
+//         break;
+//       default:
+//         console.log(" Error:Enter valid number selection");
+//     }
+//     break;
+//   case 2:
+//     console.log("For Main course we have: 1.Curry panner, 2.Dosa, 3.Biryani");
+//     let main = Number(prompt("Enter the order selection(1,2,3):"));
+//     switch (main) {
+//       case 1:
+//         console.log(`Your order, CURRY PANNER is on the way`);
+//         break;
+//       case 2:
+//         console.log(`Your order, DOSA is on the way`);
+//         break;
+//       case 3:
+//         console.log(`Your order, BIRYANI is on the way`);
+//         break;
+//       default:
+//         console.log(" Error:Enter valid number selection");
+//     }
+//     break;
+//   case 3:
+//     console.log("For Desert we have: 1.Cake, 2.Ice cream, 3.Rasmalai");
+//     let desert = Number(prompt("Enter the order selection(1,2,3):"));
+//     switch (desert) {
+//       case 1:
+//         console.log(`Your order, CAKE is on the way`);
+//         break;
+//       case 2:
+//         console.log(`Your order, ICE CREAM is on the way`);
+//         break;
+//       case 3:
+//         console.log(`Your order, RASMALAI is on the way`);
+//         break;
+//       default:
+//         console.log(" Error:Enter valid number selection");
+//     }
+//     break;
+
+//   default:
+//     console.log("Error:Enter valid Selection(1,2,3)");
+// }
+
+let order = prompt(`Enter Your selection bike or car`);
+switch (order) {
+  case "bike":
+    console.log("For Bike we have: 1.KTM, 2.BAJAJ, 3.ROYAL ENFIELD");
+    let bike = Number(prompt("Enter the order selection(1,2,3):"));
+    switch (bike) {
+      case 1:
+        console.log(`Youe selection is KTM.`);
+        break;
+      case 2:
+        console.log(`Your selection is BAJAJ.`);
+        break;
+      case 3:
+        console.log(`Your selection is ROYAL ENFIELD`);
+        break;
+      default:
+        console.log(" Error:Enter valid number selection");
+    }
     break;
-  case "-":
-    console.log(`The substraction of ${num1} and ${num2} is ${num1 - num2}`);
+  case 2:
+    console.log("For Car we have: 1.BMW, 2.RANGE ROVER, 3.LAMBHORGINI");
+    let car = Number(prompt("Enter the order selection(1,2,3):"));
+    switch (car) {
+      case 1:
+        console.log(`Youe selection is BMW.`);
+        break;
+      case 2:
+        console.log(`Your selection is RANGE ROVER.`);
+        break;
+      case 3:
+        console.log(`Your selection is LAMBHORGINI`);
+        break;
+      default:
+        console.log(" Error:Enter valid number selection");
+    }
     break;
-  case "*":
-    console.log(`The product of ${num1} and ${num2} is ${num1 * num2}`);
-    break;
-  case "/":
-    console.log(`The division of ${num1} and ${num2} is ${num1 / num2}`);
-    break;
-  case "%":
-    console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2}`);
-    break;
-  case "**":
-    console.log(`The  product of ${num1} power ${num2} is ${num1 ** num2}`);
-    break;
+
   default:
-    console.log("Enter valid operator!");
+    console.log("Error:Enter valid Selection car or bike!");
 }
