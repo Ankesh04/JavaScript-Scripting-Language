@@ -1,4 +1,5 @@
-// Iteration
+// Iterations
+// For loop
 // i = 2;
 // console.log(i + 2);
 // console.log(i);
