@@ -26,7 +26,6 @@
 // console.log("Number of odds are ", odd);
 // console.log("Number of evens are", even);
 
-// check whether the number is divisible by 3&5
 let div5 = 0;
 let div3 = 0;
 for (let i = 1; i <= 30; i++) {
