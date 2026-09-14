@@ -132,5 +132,5 @@ console.log(a);
 let b = details.filter((c) => {
   return c.age > 22;
 });
-
+// filter are same as map but there are difference
 console.log(b);
