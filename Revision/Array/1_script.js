@@ -134,3 +134,12 @@ let b = details.filter((c) => {
 });
 // filter are same as map but there are difference
 console.log(b);
+
+// DESTRUCTURING
+// declaring each element of array to a variable
+let ar = [10, 20, 30, 40];
+let [g, h, j, k] = ar;
+console.log(g);
+console.log(h);
+console.log(j);
+console.log(k);
