@@ -49,3 +49,44 @@ obj.skills = "Bowler";
 obj.age = 21;
 console.log(obj);
 console.log(Object.isFrozen(obj));
+
+// DESRTUCTURING
+let { name, age, place, course } = obj;
+console.log(name);
+console.log(course);
+console.log(place);
+console.log(age);
+// in destructuring in object we donot have to put random variable instead we have to write particular or exact name
+// if we need only name and place then we can use that two variable names only
+
+let { name: firstName, age: myAge } = obj;
+console.log(firstName);
+console.log(myAge);
+// nested object desruturing
+let obj1 = {
+  name: "ankesh",
+  age: 22,
+  place: "jharkhand",
+  course: {
+    mern: "javascript",
+    java: "springboot",
+  },
+};
+
+let { mern, java } = obj1.course;
+
+console.log(mern);
+console.log(java);
+
+let a = {
+  name: "Ankesh",
+  age: 22,
+  place: "India",
+};
+
+function sentence({ name, age, place }) {
+  console.log(`I am ${name}.`);
+  console.log(`I am from ${place}.`);
+}
+
+sentence(a);

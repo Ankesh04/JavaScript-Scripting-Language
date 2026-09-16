@@ -7,9 +7,6 @@
 // // console.log(a.unshift(80));
 // // console.log(a);
 // // console.log(a.shift());
-// // console.log(a.slice(1, 3));
-// // // a.splice(startindex, delectcount, elementtoadd);
-// // let ar = a.splice(1, 1, "Ankesh", "Agarwal");
 // // console.log(ar);
 // // console.log(a);
 // // // to covert array to string
@@ -103,6 +100,9 @@
 // MAP
 // it will return the list of array and we have to store the map function in some variable
 
+// // console.log(a.slice(1, 3));
+// // // a.splice(startindex, delectcount, elementtoadd);
+// // let ar = a.splice(1, 1, "Ankesh", "Agarwal");
 // let marks = [10, 20, 30, 40, 50];
 
 // let a = marks.map((c) => {
@@ -116,30 +116,56 @@
 // });
 // console.log(a);
 
-let details = [
-  { name: "ankesh", age: 22 },
-  { name: "manas", age: 23 },
-  { name: "pratyush", age: 23 },
-];
+// let details = [
+//   { name: "ankesh", age: 22 },
+//   { name: "manas", age: 23 },
+//   { name: "pratyush", age: 23 },
+// ];
 
-let a = details.map((c) => {
-  return c.name;
-});
+// let a = details.map((c) => {
+//   return c.name;
+// });
 
-console.log(a);
+// console.log(a);
 
-// FILTER
-let b = details.filter((c) => {
-  return c.age > 22;
-});
-// filter are same as map but there are difference
-console.log(b);
+// // FILTER
+// let b = details.filter((c) => {
+//   return c.age > 22;
+// });
+// // filter are same as map but there are difference
+// console.log(b);
 
-// DESTRUCTURING
-// declaring each element of array to a variable
-let ar = [10, 20, 30, 40];
-let [g, h, j, k] = ar;
-console.log(g);
-console.log(h);
-console.log(j);
-console.log(k);
+// // DESTRUCTURING
+// // declaring each element of array to a variable
+// let ar = [10, 20, 30, 40];
+// let [g, h, j, k] = ar;
+// console.log(g);
+// console.log(h);
+// console.log(j);
+// console.log(k);
+
+// REDUCE
+// array.reduce(function(accumulator,current_value){return},initialization)
+let a = [10, 20, 30];
+let r = a.reduce(function (ac, c) {
+  return ac + c;
+}, 0);
+//accumulator will take the value of the initialization
+console.log(r);
+
+let m = a.reduce(function (ac, c) {
+  return ac * c;
+}, 1);
+
+console.log(m);
+
+let arrr = [10, 20, 30];
+function add([a, b, c]) {
+  console.log(a + b + c);
+}
+add(arrr);
+
+let num2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+let [z, x, c, v, b, n, ...q] = num2;
+console.log(q);
+//rest of the value will be stored in the q in the form of array
