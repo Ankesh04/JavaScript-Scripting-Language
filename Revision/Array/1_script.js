@@ -146,26 +146,46 @@
 
 // REDUCE
 // array.reduce(function(accumulator,current_value){return},initialization)
-let a = [10, 20, 30];
-let r = a.reduce(function (ac, c) {
-  return ac + c;
-}, 0);
-//accumulator will take the value of the initialization
-console.log(r);
+// let a = [10, 20, 30];
+// let r = a.reduce(function (ac, c) {
+//   return ac + c;
+// }, 0);
+// //accumulator will take the value of the initialization
+// console.log(r);
 
-let m = a.reduce(function (ac, c) {
-  return ac * c;
-}, 1);
+// let m = a.reduce(function (ac, c) {
+//   return ac * c;
+// }, 1);
 
-console.log(m);
+// console.log(m);
 
-let arrr = [10, 20, 30];
-function add([a, b, c]) {
-  console.log(a + b + c);
-}
-add(arrr);
+// let arrr = [10, 20, 30];
+// function add([a, b, c]) {
+//   console.log(a + b + c);
+// }
+// add(arrr);
 
-let num2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
-let [z, x, c, v, b, n, ...q] = num2;
-console.log(q);
-//rest of the value will be stored in the q in the form of array
+// let num2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// let [z, x, c, v, b, n, ...q] = num2;
+// console.log(q);
+// //rest of the value will be stored in the q in the form of array
+// function product(...z) {
+//   console.log(z);
+// }
+// product(40, 202, 202920, 30303, 3929);
+
+// function product_sum(...z) {
+//   let sum = z.reduce(function (ac, a) {
+//     return ac + a;
+//   }, 0);
+//   console.log(sum);
+// }
+// product_sum(40, 202, 202920, 30303, 3929);
+
+// function product_sum_a(...z) {
+//   let sum = z.reduce((ac, a)=> {
+//     return ac + a;
+//   }, 0);
+//   console.log(sum);
+// }
+// product_sum_a(40, 202, 202920, 30303, 3929);
