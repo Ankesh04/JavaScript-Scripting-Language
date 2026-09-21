@@ -63,15 +63,15 @@ let obj = {
 // console.log(firstName);
 // console.log(myAge);
 // // nested object desruturing
-// let obj1 = {
-//   name: "ankesh",
-//   age: 22,
-//   place: "jharkhand",
-//   course: {
-//     mern: "javascript",
-//     java: "springboot",
-//   },
-// };
+let obj1 = {
+  name: "ankesh",
+  age: 22,
+  place: "jharkhand",
+  course: {
+    mern: "javascript",
+    java: "springboot",
+  },
+};
 
 // let { mern, java } = obj1.course;
 
@@ -95,3 +95,36 @@ let obj = {
 //   console.log(a1);
 // }
 // sentence1(a);
+//rest operator(...)is used to coollect the values from the object
+
+console.log(obj1.course.mern);
+
+let { mern, ...s } = obj1.course;
+console.log(s.java);
+
+// SPREAD
+// spread operator is used to expand the values of an object
+// we can store more values in the array with the spread operator
+// in one execution only one rest parameter can be used but we can use multiple spread operator
+
+let new_obj = { ...obj1 };
+console.log(new_obj);
+let n1ew_obj = { ...obj1, company: "qspiders" };
+console.log(n1ew_obj);
+
+let obj2 = {
+  name: "Agarwal",
+  age: 22,
+  place: "Haryana",
+  course: {
+    mern: "javascript",
+    java: "springboot",
+  },
+};
+
+let new_objj = {
+  ...obj1,
+  ...obj2,
+};
+console.log(new_objj);
+// there are similar keys so the latest one executed will be displayed means last object keys will be displayed

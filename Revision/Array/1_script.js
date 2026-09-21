@@ -189,3 +189,14 @@
 //   console.log(sum);
 // }
 // product_sum_a(40, 202, 202920, 30303, 3929);
+//rest parameter(...)is used to coollect the values from the array
+
+// SPREAD
+// spread operator is used to expand the values of an array
+// we can store more values in the array with the spread operator
+// in one execution only one rest parameter can be used but we can use multiple spread operator
+
+let ar = [10, 20, 30, 40];
+let fruits = ["apple", "mango", "banana"];
+let new_ar = [...ar, 50, 60, ...fruits];
+console.log(new_ar);
