@@ -64,13 +64,13 @@
 // let div = document.createElement("div");
 // document.body.append(div);
 
-// let image = ["./admin-dashboard.png", "./admin-packages.png", "./contact.png"];
-// let index = 0;
-// setInterval(() => {
-//   div.innerHTML = `<img src="${image[index]}">`;
-//   index++;
+let image = ["./admin-dashboard.png", "./admin-packages.png", "./contact.png"];
+let index = 0;
+setInterval(() => {
+  div.innerHTML = `<img src="${image[index]}">`;
+  index++;
 
-//   if (index === 3) {
-//     index = 0;
-//   }
-// }, 2000);
+  if (index === 3) {
+    index = 0;
+  }
+}, 2000);
