@@ -12,6 +12,8 @@
 // var a = 30;
 // console.log(a);
 
+// inside a {} we can access it outside but if the var is in fucntion then we annot access
+
 // //LET
 // let k;
 // // let k //X cannot be redeclared
@@ -19,6 +21,7 @@
 // k = 20;
 // // let k = 30 X
 // console.log(k);
+// inside a {} we cannot access it outside
 
 // //CONST
 // // const a  cannot be only declared
