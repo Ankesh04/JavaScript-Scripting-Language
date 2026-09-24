@@ -45,24 +45,72 @@
 // FINALLY
 // it is used to print and it doesnot depend on the condition
 
-let citizenship = prompt("Enter your citizenship:");
-if (citizenship === "INDIA") {
-  let age = Number(prompt("Enter your age:"));
-  let c = new Promise((res, rej) => {
-    if (age >= 18) {
-      res("Eligible for vote");
-    } else {
-      rej("Not Eligible for vote"); // we get error here with the "Not Eligible for vote"
-    }
-  });
+// let citizenship = prompt("Enter your citizenship:");
+// if (citizenship === "INDIA") {
+//   let age = Number(prompt("Enter your age:"));
+//   let c = new Promise((res, rej) => {
+//     if (age >= 18) {
+//       res("Eligible for vote");
+//     } else {
+//       rej("Not Eligible for vote"); // we get error here with the "Not Eligible for vote"
+//     }
+//   });
 
-  c.then((res) => {
-    console.log(res);
-  });
-  c.catch((res) => {
-    console.log(rej);
-  });
-  c.finally(() => {
-    console.log("NIce talking to you");
-  });
-}
+//   c.then((res) => {
+//     console.log(res);
+//   });
+//   c.catch((res) => {
+//     console.log(rej);
+//   });
+//   c.finally(() => {
+//     console.log("NIce talking to you");
+//   });
+// }
+
+// let a = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("Hello");
+//   }, 2000);
+// });
+
+// a.then((res) => {
+//   console.log(res);
+// }).catch((rej) => {
+//   console.log(rej);
+// });
+
+// function login(name, password) {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       if (name === "ank" && password === 123) {
+//         res("login successfull");
+//       } else {
+//         rej("login failed");
+//       }
+//     }, 2000);
+//   });
+// }
+
+// login("ank", 123)
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err); //you can pass any parameter
+//   });
+
+// JSON
+// Javascript object notation
+// Browser only understand json file but javascript understand javascript object
+// so to convert object to json we use JSON.stringify
+// so to convert json to object we use JSON.parse
+
+// let obj = {
+//   name: "ankesh",
+//   age: 22,
+// };
+// console.log(obj);
+// let j_son = JSON.stringify(obj);
+// console.log(j_son);
+// let p = JSON.parse(j_son);
+// console.log(p);
