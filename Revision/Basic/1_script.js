@@ -1,4 +1,4 @@
-// console.log("Good morning");
+console.log("Good morning");
 // //clg shorcut for console.log()
 // var a;
 // var a = 10;
@@ -380,43 +380,43 @@
 //     console.log("Error:Enter valid Selection(1,2,3)");
 // }
 
-let order = prompt(`Enter Your selection bike or car`);
-switch (order) {
-  case "bike":
-    console.log("For Bike we have: 1.KTM, 2.BAJAJ, 3.ROYAL ENFIELD");
-    let bike = Number(prompt("Enter the order selection(1,2,3):"));
-    switch (bike) {
-      case 1:
-        console.log(`Youe selection is KTM.`);
-        break;
-      case 2:
-        console.log(`Your selection is BAJAJ.`);
-        break;
-      case 3:
-        console.log(`Your selection is ROYAL ENFIELD`);
-        break;
-      default:
-        console.log(" Error:Enter valid number selection");
-    }
-    break;
-  case 2:
-    console.log("For Car we have: 1.BMW, 2.RANGE ROVER, 3.LAMBHORGINI");
-    let car = Number(prompt("Enter the order selection(1,2,3):"));
-    switch (car) {
-      case 1:
-        console.log(`Youe selection is BMW.`);
-        break;
-      case 2:
-        console.log(`Your selection is RANGE ROVER.`);
-        break;
-      case 3:
-        console.log(`Your selection is LAMBHORGINI`);
-        break;
-      default:
-        console.log(" Error:Enter valid number selection");
-    }
-    break;
+// let order = prompt(`Enter Your selection bike or car`);
+// switch (order) {
+//   case "bike":
+//     console.log("For Bike we have: 1.KTM, 2.BAJAJ, 3.ROYAL ENFIELD");
+//     let bike = Number(prompt("Enter the order selection(1,2,3):"));
+//     switch (bike) {
+//       case 1:
+//         console.log(`Youe selection is KTM.`);
+//         break;
+//       case 2:
+//         console.log(`Your selection is BAJAJ.`);
+//         break;
+//       case 3:
+//         console.log(`Your selection is ROYAL ENFIELD`);
+//         break;
+//       default:
+//         console.log(" Error:Enter valid number selection");
+//     }
+//     break;
+//   case 2:
+//     console.log("For Car we have: 1.BMW, 2.RANGE ROVER, 3.LAMBHORGINI");
+//     let car = Number(prompt("Enter the order selection(1,2,3):"));
+//     switch (car) {
+//       case 1:
+//         console.log(`Youe selection is BMW.`);
+//         break;
+//       case 2:
+//         console.log(`Your selection is RANGE ROVER.`);
+//         break;
+//       case 3:
+//         console.log(`Your selection is LAMBHORGINI`);
+//         break;
+//       default:
+//         console.log(" Error:Enter valid number selection");
+//     }
+//     break;
 
-  default:
-    console.log("Error:Enter valid Selection car or bike!");
-}
+//   default:
+//     console.log("Error:Enter valid Selection car or bike!");
+// }

@@ -114,3 +114,48 @@
 // console.log(j_son);
 // let p = JSON.parse(j_son);
 // console.log(p);
+
+// FETCH
+// fetch("https://fakestoreapi.com/products") //if we print this it will return a promise
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((response) => {
+//     console.log(response);
+//   });
+// fetch("https://fakestoreapi.com/products") //if we print this it will return a promise
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((response) => {
+//     let a = response.filter((c) => {
+//       return c.price > 100;
+//     });
+//     console.log(a);
+//   });
+
+// let ar = [
+//   { name: "febin", age: 21 },
+//   { name: "bhaskar", age: 30 },
+//   { name: "Nadeem", age: 32 },
+//   { name: "Ankesh", age: 22 },
+// ];
+
+// let c = ar.filter((s) => {
+//   return s.age > 21;
+// });
+// console.log(c);
+
+fetch("https://fakestoreapi.com/products")
+  .then((response) => {
+    return response.json();
+  })
+  .then((response) => {
+    let d = response.filter((c) => {
+      console.log(c);
+      return c.title;
+
+      //   return c.title.startsWith("A");
+    });
+    console.log(d);
+  });
