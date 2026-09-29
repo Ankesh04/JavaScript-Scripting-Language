@@ -97,34 +97,66 @@ let obj1 = {
 // sentence1(a);
 //rest operator(...)is used to coollect the values from the object
 
-console.log(obj1.course.mern);
+// console.log(obj1.course.mern);
 
-let { mern, ...s } = obj1.course;
-console.log(s.java);
+// let { mern, ...s } = obj1.course;
+// console.log(s.java);
 
 // SPREAD
 // spread operator is used to expand the values of an object
 // we can store more values in the array with the spread operator
 // in one execution only one rest parameter can be used but we can use multiple spread operator
 
-let new_obj = { ...obj1 };
-console.log(new_obj);
-let n1ew_obj = { ...obj1, company: "qspiders" };
-console.log(n1ew_obj);
+// let new_obj = { ...obj1 };
+// console.log(new_obj);
+// let n1ew_obj = { ...obj1, company: "qspiders" };
+// console.log(n1ew_obj);
 
-let obj2 = {
-  name: "Agarwal",
-  age: 22,
-  place: "Haryana",
-  course: {
-    mern: "javascript",
-    java: "springboot",
-  },
-};
+// let obj2 = {
+//   name: "Agarwal",
+//   age: 22,
+//   place: "Haryana",
+//   course: {
+//     mern: "javascript",
+//     java: "springboot",
+//   },
+// };
 
-let new_objj = {
-  ...obj1,
-  ...obj2,
-};
-console.log(new_objj);
+// let new_objj = {
+//   ...obj1,
+//   ...obj2,
+// };
+// console.log(new_objj);
 // there are similar keys so the latest one executed will be displayed means last object keys will be displayed
+
+// FOR IN LOOP
+// use to iterate the object and return only MediaKeySession
+
+// let obj2 = {
+//   name: "Agarwal",
+//   age: 22,
+//   place: "Haryana",
+//   course: {
+//     mern: "javascript",
+//     java: "springboot",
+//   },
+// };
+// for (let key in obj2) {
+//   console.log(key);
+// }
+// for (let key in obj2) {
+//   console.log(obj2[key]);
+// }
+
+// let a = {
+//   l: 20,
+//   f: 40,
+//   s: 30,
+//   v: 10,
+//   c: 90,
+// };
+// let b = 0;
+// for (let key in a) {
+//   b = b + a[key];
+// }
+// console.log(b);

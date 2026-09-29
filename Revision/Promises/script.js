@@ -146,16 +146,87 @@
 // });
 // console.log(c);
 
-fetch("https://fakestoreapi.com/products")
-  .then((response) => {
-    return response.json();
-  })
-  .then((response) => {
-    let d = response.filter((c) => {
-      console.log(c);
-      return c.title;
+// fetch("https://fakestoreapi.com/products")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((response) => {
+//     let d = response.filter((c) => {
+//       console.log(c);
+//       return c.title;
 
-      //   return c.title.startsWith("A");
-    });
-    console.log(d);
+//       //   return c.title.startsWith("A");
+//     });
+//     console.log(d);
+//   });
+
+// fetch("https://dummyjson.com/products")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data.products[0].title);
+//     data.products.forEach((c) => {
+//       console.log(c.title);
+//     });
+//   });
+
+// fetch("https://dummyjson.com/carts")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     let a = data.carts.filter((c) => {
+//       return c.products[0].price;
+//     });
+//     console.log(a);
+//   });
+
+// fetch("https://dummyjson.com/products")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data.products);
+
+//     let total = data.products.filter((c) => {
+//       return c.price > 10;
+//     });
+//     return total;
+//   })
+//   .then((total) => {
+//     let price = total.map((c) => {
+//       return c.price;
+//     });
+//     console.log(price);
+//     let a = price.reduce((ac, c) => {
+//       return ac + c;
+//     }, 0);
+//     console.log(a);
+//   });
+
+// async function getdata() {
+//   let data = await fetch("https://dummyjson.com/products");
+//   let fetchedData = await data.json();
+//   console.log(fetchedData);
+//   fetchedData.products.forEach((c) => {
+//     console.log(c.title);
+//   });
+// }
+// getdata();
+async function getdata() {
+  let data = await fetch("https://dummyjson.com/users");
+  let fetchedData = await data.json();
+  console.log(fetchedData);
+  fetchedData.users.forEach((c) => {
+    console.log(c.firstName, c.lastName);
+    console.log(
+      `
+      My name is ${c.firstName}.
+      My eye color is ${c.eyeColor}.
+      My hair color is ${c.hair.color}
+      `,
+    );
   });
+}
+getdata();

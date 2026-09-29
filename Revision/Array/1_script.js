@@ -196,7 +196,38 @@
 // we can store more values in the array with the spread operator
 // in one execution only one rest parameter can be used but we can use multiple spread operator
 
-let ar = [10, 20, 30, 40];
-let fruits = ["apple", "mango", "banana"];
-let new_ar = [...ar, 50, 60, ...fruits];
-console.log(new_ar);
+// let ar = [10, 20, 30, 40];
+// let fruits = ["apple", "mango", "banana"];
+// let new_ar = [...ar, 50, 60, ...fruits];
+// console.log(new_ar);
+
+// FOR OF LOOP
+// use to iterate with string and arrays
+// let num2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// for (let a of num2) {
+//   console.log(a);
+// }
+
+// let a = "JAVA SCRIPT";
+// for (let b of a) {
+//   console.log(b);
+// }
+// let count = 0;
+// for (let b of a) {
+//   count++;
+// }
+// console.log(count);
+
+// let c = "";
+// for (let b of a) {
+//   c = b + c;
+//   //   ""=J+""
+//   //  J=A+J
+//   // AJ=V+AJ
+//   // VAJ=A+VAJ
+//   // AVAJ=" "+AVAJ
+//   // and continue
+// }
+// console.log(c);
+
+// FOR IN LOOP
