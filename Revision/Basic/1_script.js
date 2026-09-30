@@ -1,4 +1,4 @@
-console.log("Good morning");
+// console.log("Good morning");
 // //clg shorcut for console.log()
 // var a;
 // var a = 10;
@@ -11,6 +11,11 @@ console.log("Good morning");
 // a = 20;
 // var a = 30;
 // console.log(a);
+
+// logical bitwise not operator
+// console.log(~9);
+// xor
+// console.log(7 ^ 2);
 
 // inside a {} we can access it outside but if the var is in fucntion then we annot access
 
