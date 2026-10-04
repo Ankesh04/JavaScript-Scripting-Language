@@ -135,8 +135,14 @@ localStorage.setItem("price", a1.join(" "));
 let price = localStorage.getItem("price");
 console.log(price.split(" "));
 
+localStorage.setItem("array", a1);
+let ar = localStorage.getItem("array");
+console.log(ar.split(","));
+
 // in local Storage data will be stored even if tab is closed but in session storage the data will be deleted when the tab is closed
 sessionStorage.setItem("name", "ankesh");
 // and all goes same as localStorage methods
 let c = sessionStorage.getItem("name");
 console.log(c);
+
+// for(let i=0;)
