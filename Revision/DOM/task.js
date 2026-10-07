@@ -22,13 +22,35 @@ nav.append(logo, home, about, contact);
 nav.style.backgroundColor = "yellow";
 
 nav.style.height = "50px";
-logo.style.fontSize = "50px";
-home.style.fontSize = "50px";
-about.style.fontSize = "50px";
-contact.style.fontSize = "50px";
+logo.style.fontSize = "40px";
+home.style.fontSize = "30px";
+about.style.fontSize = "30px";
+contact.style.fontSize = "30px";
 
 nav.style.display = "flex";
+nav.style.alignItems = "center";
 
-home.style.marginLeft = "680px";
+home.style.marginLeft = "890px";
 about.style.marginLeft = "50px";
 contact.style.marginLeft = "50px";
+
+let maindiv = document.createElement("div");
+document.body.append(maindiv);
+
+async function getData() {
+  let data = await fetch("https://dummyjson.com/products");
+  //   here data is a response object which is done by fetch that converts json in responce object
+  let finalData = await data.json();
+  //   here finaldata will be a object which is converted by data.json
+
+  finalData.products.forEach((c) => {
+    maindiv.innerHTML += `
+    <div>
+        <img src="${c.images[0]}" class="img-card">
+        <h3>${c.title}</h3>
+    </div>
+    `;
+  });
+}
+
+getData();
