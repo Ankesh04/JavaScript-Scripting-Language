@@ -75,14 +75,16 @@ button {
 
 a {
     position: relative;
-    left: 100px;
+    left: 280px;
     /* bottom: 15px; */
     text-decoration: none;
     color: black;
     background-color: rgb(147, 123, 91);
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 1px 7px;
     border-radius: 5px;
     border: none;
-    width: 30%;
+    width: 12%;
+    bottom: 21px;
+    font-size: 17px;
 }
