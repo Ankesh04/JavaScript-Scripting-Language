@@ -1,20 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <title>DOM learning</title>
     <style>
-        .bg-black{
+        .bg-black {
             background-color: #212121;
             color: #fff;
         }
     </style>
 </head>
+
 <body class="bg-black">
-    <div >
-        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
@@ -29,9 +30,10 @@
         </ul>
     </div>
 </body>
+
 </html>
 
-<!--
+
 document.gteElementById('title').id
 'title'
 title.textContent
@@ -57,23 +59,19 @@ now we will add all the nodelist values in a variable
 const allH2 = document.querySelectorAll('h2')
 now if we have to know element on each index we will written
 >allH2[0].innerHTML
-<-'Contents'
->allH2[1].innerHTML
-<-'Trademark'
+<-'Contents'>allH2[1].innerHTML
+    <-'Trademark' now if we have to know where the particular classname is been used
+        then>document.querySelectorAll('.mw-headline')
+        NodeList[40]
+        >const myH2 = document.querySelectorAll('.mw-headline')
 
-now if we have to know where the particular classname is been used then
->document.querySelectorAll('.mw-headline')
-NodeList[40] 
->const myH2 = document.querySelectorAll('.mw-headline')
+        now if we want to manipulate the page or make changesn then
+        myH2.forEach(function(h){
+        h.style.color = 'red';
+        h.style.backgroundcolor = 'green';
+        h.style.padding = '10px';
+        h.innerHTML = 'Ankesh'
+        })
 
-now if we want to manipulate the page or make changesn then
-myH2.forEach(function(h){
-    h.style.color = 'red';
-    h.style.backgroundcolor = 'green';
-    h.style.padding = '10px';
-    h.innerHTML = 'Ankesh' 
-})
-
-the style changes and name of all the heading containing the class hmw-headline will changed to Ankesh.
-DOM MANIPULATION 
--->
+        the style changes and name of all the heading containing the class hmw-headline will changed to Ankesh.
+        DOM MANIPULATION
