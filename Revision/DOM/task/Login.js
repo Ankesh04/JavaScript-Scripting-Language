@@ -19,16 +19,16 @@ login.addEventListener("submit", (e) => {
     alert("Please enter the details");
   }
 
-  //   localStorage.setItem("email", email);
-  //   localStorage.setItem("password", password);
-  //   let a = localStorage.getItem("email");
-  //   let b = localStorage.getItem("password");
-  //   console.log(a, b);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+  let a = localStorage.getItem("email");
+  let b = localStorage.getItem("password");
+  console.log(a, b);
 
-  if (userdetails.email == email && userdetails.password == password) {
-    alert("Login Successful");
-    console.log("login succesfull");
-  } else {
-    alert("wrong email or password");
-  }
+  // if (userdetails.email == email && userdetails.password == password) {
+  //   alert("Login Successful");
+  //   console.log("login succesfull");
+  // } else {
+  //   alert("wrong email or password");
+  // }
 });
