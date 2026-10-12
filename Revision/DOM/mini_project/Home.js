@@ -3,8 +3,8 @@ let details = document.getElementById("details");
 details.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let from = document.getElementById("from").value;
-  let to = document.getElementById("to").value;
+  let from = document.getElementById("from").value.trim();
+  let to = document.getElementById("to").value.trim();
   let date = document.getElementById("date").value;
 
   // console.log(from , to , date)
@@ -24,3 +24,5 @@ details.addEventListener("submit", (e) => {
   localStorage.setItem("tripDetails", data);
   window.location.href = "./bus-result.html";
 });
+
+localStorage.setItem("id", "ankesh");

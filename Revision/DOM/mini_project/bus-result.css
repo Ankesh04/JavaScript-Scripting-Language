@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navBar {
+    height: 50px;
+    background-color: rgb(147, 242, 254);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 15px 5px 30px rgb(147, 242, 254);
+
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav div {
+    margin-right: 3%;
+}
+
+div a {
+    color: black;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+#searchDetails {
+    width: 90%;
+    height: 50px;
+    background-color: darkblue;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+#date {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+#searchDetails div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+
+#searchDetails a {
+
+    text-decoration: none;
+    border: 2px solidrgb(147, 242, 254);
+    background-color: rgb(147, 242, 254);
+    margin-right: 10px;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+#searchDetails a:hover {
+    background-color: white;
+    color: rgb(147, 242, 254);
+}
