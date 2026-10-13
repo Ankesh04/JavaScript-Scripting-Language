@@ -74,3 +74,24 @@ setInterval(() => {
     index = 0;
   }
 }, 2000);
+
+/*RETURN
+returna always accept if only it is written insed same line 
+example function name=(a,b)=>{
+         return (
+           a+b          
+           )
+  } output will be undefined as the a+b is not in the same line
+
+  return 10
+  a+b
+  output will be 10
+
+  return 10+
+  a+b
+  output will be 10+a+b means we will get the answer
+
+  return 10
+  +a+b
+  here also we will get the answer 10+a+b
+  */
