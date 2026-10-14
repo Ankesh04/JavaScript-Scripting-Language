@@ -144,8 +144,8 @@ let obj1 = {
 // for (let key in obj2) {
 //   console.log(key);
 // }
-// for (let key in obj2) {
-//   console.log(obj2[key]);
+for (let key in obj2) {
+  console.log(obj2[key]);
 // }
 
 // let a = {
